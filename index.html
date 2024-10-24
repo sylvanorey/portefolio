@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- En-tête (header) de la page contenant la navigation -->
+    <header>
+        <!-- Barre de navigation -->
+        <nav>
+            <ul>
+                <!-- Liste des liens de navigation -->
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#work">Travaux</a></li>
+                <li><a href="#resume">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contenu principal de la page (main)-->
+    <main>
+        <!-- Section d'accueil -->
+        <section id="home">
+            <h1>Bienvenue sur mon portfolio</h1>
+            <p>Découvrez mes réalisations et mon parcours professionnel.</p>
+        </section>
+        <!-- Section "À propos" -->
+        <section id="about">
+            <h2>À propos de moi</h2>
+            <p>Je suis un développeur web passionné par la création d'expériences numériques innovantes.</p>
+            <!-- Élément audio pour une présentation audio, mais je n'ais pas 
+             inséré de source audio pour l'instant-->
+            <audio controls>
+                <source src="presentation.mp3" type="audio/mpeg">
+                
+            </audio>
+        </section>
+        <!-- Section "Travaux" avec un tableau -->
+        <section id="work">
+            <h2>Mes travaux</h2>
+            <table border="4">
+                <tr>
+                    <th>Projet</th>
+                    <th>Description</th>
+                    <th>Lien</th>
+                </tr>
+                <!-- Lignes du tableau pour chaque projet
+                 NB: ces projets sont fictifs, je les mentionnes en fonction de 
+                l'exercice pour l'instant -->
+                <tr>
+                    <td>Création d'un site vitrine pour un restaurant</td>
+                    <td>site vitrine responsive de restaurant africain</td>
+                    <td><a href="projet1.html">Voir le projet</a></td>
+                </tr>
+                <tr>
+                    <td>creation de mon blog sur la ville d'Abidjan</td>
+                    <td>creation de contenu concernant la ville d'abidjan</td>
+                    <td><a href="projet2.html">Voir le projet</a></td>
+                </tr>  
+                <tr>
+                    <td>sites E-commerce</td>
+                    <td>perles et colliers d'Afrique</td>
+                    <td><a href="projet3.html">voir  le projet</a></td>
+                </tr>
+            </table>
+        </section>
+        <!-- Section "CV" avec une liste et une vidéo -->
+        <section id="resume">
+            <h2>Mon CV</h2>
+            <!-- Liste non ordonnée pour les détails du CV, pour des raisons d'exercices
+             en raport avec le projet pour l'instant -->
+            <ul>
+                <li>certificat en développement web - 2024</li>
+                <li>2 ans d'expérience en tant que développeur front-end</li>
+                <li>Spécialisation en React et Vue.js</li>
+            </ul>
+            <!-- Élément vidéo fictif pour une présentation visuelle du CV  en rapport avec l'exercice-->
+            <video width="320" height="240" controls>
+                <source src="cv_video.mp4" type="video/mp4">
+                
+            </video>
+        </section>
+        <!-- Section "Contact" avec un formulaire -->
+        <section id="contact">
+            <h2>Contactez-moi</h2>
+            <!-- Formulaire de contact -->
+            <form action="" method="post">
+                <!-- Champ pour le nom -->
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+                <!-- partie email -->
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                <!-- Zone de texte pour le message -->
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+                <!-- Bouton d'envoi du formulaire -->
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+       
+    </main>
+    <!-- Pied de page -->
+    <footer>
+        <h4> suivez moi sur mes réseaux</h4>
+
+        <ul>
+            <li><a href="#facebook">facebook</a></li>
+            <li><a href="#tweeter">tweeter</a></li>
+            <li><a href="#linkedin">linkedin</a></li>
+            <li><a href="#instagram">instagram</a></li>
+        </ul>
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
